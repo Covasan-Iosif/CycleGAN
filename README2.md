@@ -1,5 +1,5 @@
 # Ablation Study
-The study addresses the "I’m Something of a Painter Myself" Kaggle competition, employing a Cycle-Consistent Adversarial Network (CycleGAN) model inspired by the [paper](https://arxiv.org/abs/1703.10593). Unlike the original model, this study utilizes a U-net architecture for both generators, optimizing its ability to learn finer feature relationships with the limited dataset of 300 Monet paintings. The model's streamlined workflow and enhanced training through image augmentation techniques result in superior performance, achieving a MiFID score of 41.45087 on a GPU within a 5-hour training window. This marks a substantial improvement compared
+The study addresses the "I’m Something of a Painter Myself" Kaggle competition, employing a Cycle-Consistent Adversarial Network (CycleGAN) model inspired by the [paper](https://arxiv.org/abs/1703.10593). Unlike the original model, this study utilizes a U-net architecture for both generators, optimizing its ability to learn finer feature relationships with the limited dataset of 300 Monet paintings. The model's streamlined workflow and enhanced training through image augmentation techniques result in superior performance, achieving a MiFID score of 40.46968 on a GPU within a 5-hour training window. This marks a substantial improvement compared
 to the baseline model provided by the competition, which attained a score of 53.76998, while training on a more powerful TPU.  <br>
 
 Another approach attempted for the competition involved a cycleGAN utilizing a ResNet architecture with 9 residual blocks for both generators, akin to the implementation in the CycleGAN paper. However, due to limitations related to the small size of the dataset and time constraints, this model does not achieve better results than the one utilizing a U-Net architecture for generators. <br>
@@ -15,5 +15,5 @@ Both U-net and ResNet9 implementations are in this [notebook](https://www.kaggle
 These results are under the competition constraints.
 | gen arhitecture | ResNet9 | ResNet6 | U-Net |
 |---------|---------|---------|---------|
-| MiFID score | 50.20616 | 46.75595 | 41.45097 | 
+| MiFID score | 50.20616 | 46.75595 | 40.46968 | 
 
