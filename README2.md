@@ -11,3 +11,9 @@ the time constraints. None of the proposed models in the paper is suitable for r
 on CPU, considering the constraints related to the small domain space and time limit of
 the competition. <br> <br>
 Both U-net and ResNet9 implementations are in this [notebook](https://www.kaggle.com/code/iosifcovasan/photo-to-monet-using-cyclegan)
+<br> <br>
+These results are under the competition constraints.
+| gen arhitecture | ResNet9 | ResNet6 | U-Net |
+|---------|---------|---------|---------|
+| MiFID score | 50.20616 | 46.75595 | 41.45097 | 
+
